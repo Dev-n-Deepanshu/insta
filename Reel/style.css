@@ -1,0 +1,24 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    color: white;
+    height: 200vh;
+}
+.scroll{
+    height: 10px;
+    position: fixed;
+    background-color: red;
+    top: 0;
+    width: 100%;
+    scale: 0 1;
+    animation: scroll linear;
+    transform-origin: 10px;
+    animation-timeline: scroll();
+}
+@keyframes scroll{ 
+    to{
+        scale: 1 1;
+    }
+}
